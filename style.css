@@ -43,8 +43,10 @@ body * {
 
 /*CSSTRICKS.COM ACESSAR*/
 #container {
-    width: 360px;
-    /*abaixo ele esta aplicando auto para right e left e 56 e 0 para top e bottom*/
+    /*a baixo esta indicando que ele ficara 100% ate chegar na largura maxima de 588px da tela*/
+    width: 100%;
+    max-width: 588px;
+   
     margin: 56px auto 0px;
     /*margin: top right bottom left(igual um relogio )*/
 }
@@ -110,7 +112,7 @@ margin-top:8px;
 
 ul {
     list-style: none;
-    margin: 24px 0 auto 0;
+    margin: 24px 24px auto ;
     display:flex;
     flex-direction: column;
     gap: 16px;   
