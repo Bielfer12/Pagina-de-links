@@ -88,7 +88,13 @@ margin-top:8px;
     
     transform: translateY(-50%);
     top: 50%;
+    animation: slide-out 0.2s ;
     
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+
 }
 
 #switch span {
@@ -104,7 +110,8 @@ margin-top:8px;
 }
 
 .light #switch button {
-    right: 0;
+    
+   animation: slide-in 0.4s forwards;
 }
 
 #links{
@@ -191,23 +198,24 @@ ul li a:hover {
     }
 }
 
-@media (min-height: 100px) {
-    :root {
-        --text-color:white;
-        --stroke-color: rgba(255, 255, 255, 0.5);
-        --surface-color:  rgba(255, 255, 255, 0.05);
-        --surface-color-hover: rgba(0, 0, 0, 0.2);
-        --highlight-color:rgba(255, 255, 255, 0.2);
-        --moon-sun:white url(./assets/moon-stars.svg) no-repeat center;
-    }
 
-    .light {
-    --text-color:black; 
-    --stroke-color: rgba(0, 0, 0, 0.5);
-    --surface-color: rgba(0, 0, 0, 0.05);
-    --surface-color-hover: rgba(0, 0, 0, 0.2);
-    --highlight-color:rgba(0, 0, 0, 0.1);
-    --moon-sun:white url(./assets/sun.svg) no-repeat center;
-    
+/*animação*/
+
+@keyframes slide-in{
+from {
+left: 0;
+}
+to{
+    left: 50%;
+
+}
+}
+
+@keyframes slide-out {
+    from {
+        left:50%;
+    }
+    to{
+        left: 0;
     }
 }
