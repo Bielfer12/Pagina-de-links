@@ -6,6 +6,7 @@ body {
  background-size:cover; */
  /*Background:color image repeat position/size*/
  background: var(--background) top center/cover;
+ height: 100vh;
 }
 
 :root {
@@ -20,7 +21,7 @@ body {
 
 .light {
     --text-color:black; 
-    --background:url(./assets/bg-mobile-light.jpg);
+    --background:url(./assets/bg-mobile-light.jpg) ;
     --stroke-color: rgba(0, 0, 0, 0.5);
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
@@ -44,8 +45,8 @@ body * {
 /*CSSTRICKS.COM ACESSAR*/
 #container {
     /*a baixo esta indicando que ele ficara 100% ate chegar na largura maxima de 588px da tela*/
-    width: 100%;
-    max-width: 588px;
+    width: 588px;
+    max-width: 100%;
    
     margin: 56px auto 0px;
     /*margin: top right bottom left(igual um relogio )*/
@@ -176,3 +177,37 @@ ul li a:hover {
 
 }
 
+/*media queries*/
+/*so funciona se tiver essa linha em seu HTML : <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+@media (min-width: 700px )/*se for a cima disso faça*/{
+    :root {
+        
+        --background:url(./assets/bg-desktop.jpg) no-repeat;
+        
+    }
+    .light {
+        --background:url(./assets/bg-desktop-light.jpg) no-repeat;
+
+    }
+}
+
+@media (min-height: 100px) {
+    :root {
+        --text-color:white;
+        --stroke-color: rgba(255, 255, 255, 0.5);
+        --surface-color:  rgba(255, 255, 255, 0.05);
+        --surface-color-hover: rgba(0, 0, 0, 0.2);
+        --highlight-color:rgba(255, 255, 255, 0.2);
+        --moon-sun:white url(./assets/moon-stars.svg) no-repeat center;
+    }
+
+    .light {
+    --text-color:black; 
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.2);
+    --highlight-color:rgba(0, 0, 0, 0.1);
+    --moon-sun:white url(./assets/sun.svg) no-repeat center;
+    
+    }
+}
