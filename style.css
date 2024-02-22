@@ -6,14 +6,15 @@ body {
  background-size:cover; */
  /*Background:color image repeat position/size*/
  background: var(--background) top center/cover;
- height: 100vh;
+ height: auto;
+ 
  
 }
 
 :root {
     --text-color:white;
     --background:#313030;
-    --background-container:#313030;
+    --background-container:#444444;
     --surface-color:  rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
     --highlight-color:rgba(255, 255, 255, 0.2);
@@ -23,7 +24,7 @@ body {
 /*adadada*/
 .light {
     --text-color:black; 
-    /*--background:url(./assets/bg-mobile-light.jpg) ;*/
+    --background:url(./assets/bg-mobile-light.jpg) ;
     --background-container: #d6cfd3;
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
@@ -31,7 +32,6 @@ body {
     --moon-sun:white url(./assets/sun.svg) no-repeat center;
     --color-p: #ff007f;
     
-
 }
 
  *{
