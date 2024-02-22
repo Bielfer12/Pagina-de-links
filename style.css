@@ -206,12 +206,7 @@ ul li a:hover {
 @media (min-width: 700px )/*se for a cima disso faça*/{
     :root {
         
-<<<<<<< HEAD
-        
-        
-=======
-        --background:#282727 no-repeat;
->>>>>>> e4efcc100288c41997fc13baa8499c1f75e09911
+
     }
     .light {
         
