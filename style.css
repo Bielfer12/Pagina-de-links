@@ -7,26 +7,29 @@ body {
  /*Background:color image repeat position/size*/
  background: var(--background) top center/cover;
  height: 100vh;
+ 
 }
 
 :root {
     --text-color:white;
-    --background:url(./assets/bg-mobile.jpg);
-    --stroke-color: rgba(255, 255, 255, 0.5);
+    --background:#313030;
+    --background-container:#313030;
     --surface-color:  rgba(255, 255, 255, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
     --highlight-color:rgba(255, 255, 255, 0.2);
     --moon-sun:white url(./assets/moon-stars.svg) no-repeat center;
+    --color-p:#ccff33;
 }
-
+/*adadada*/
 .light {
     --text-color:black; 
     --background:url(./assets/bg-mobile-light.jpg) ;
-    --stroke-color: rgba(0, 0, 0, 0.5);
+    --background-container: #d6cfd3;
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
     --highlight-color:rgba(0, 0, 0, 0.1);
     --moon-sun:white url(./assets/sun.svg) no-repeat center;
+    --color-p: #ff007f;
     
 
 }
@@ -47,8 +50,11 @@ body * {
     /*a baixo esta indicando que ele ficara 100% ate chegar na largura maxima de 588px da tela*/
     width: 588px;
     max-width: 100%;
-   
-    margin: 56px auto 0px;
+    
+    margin: 68px auto 78px;
+    padding:35px 25px 5px 25px;
+    background-color: var(--background-container);
+    border-radius: 2%;
     /*margin: top right bottom left(igual um relogio )*/
 }
 
@@ -66,6 +72,10 @@ body * {
 font-weight: 500;
 line-height: 24px;
 margin-top:8px;
+}
+
+#p-container {
+    color:var(--color-p);
 }
 
 #switch {
@@ -120,18 +130,23 @@ margin-top:8px;
     padding:24px;
 }
 
+#descricao {
+    margin: 24px ;
+  text-align: center;
+}
+
 ul {
     list-style: none;
-    margin: 24px 24px auto ;
+    margin: 0 24px  ;
     display:flex;
     flex-direction: column;
-    gap: 16px;   
+    gap: 16px;  
+    padding: 5px; 
 }
 
 /*li= lista de itens*/
 /*a= os links que é acessado */
 ul li a{
-    border: 1px solid var(--stroke-color);
     border-radius: 8px;
     background: var(--surface-color);
     
@@ -191,8 +206,12 @@ ul li a:hover {
 @media (min-width: 700px )/*se for a cima disso faça*/{
     :root {
         
+<<<<<<< HEAD
         
         
+=======
+        --background:#282727 no-repeat;
+>>>>>>> e4efcc100288c41997fc13baa8499c1f75e09911
     }
     .light {
         
