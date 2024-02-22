@@ -110,6 +110,7 @@ margin-top:8px;
     /*ola estou ajeitando o codigo*/
 }
 
+
 .light #switch button {
     
    animation: slide-in 0.4s forwards;
@@ -190,11 +191,11 @@ ul li a:hover {
 @media (min-width: 700px )/*se for a cima disso faça*/{
     :root {
         
-        --background:url(./assets/bg-desktop.jpg) no-repeat;
+        
         
     }
     .light {
-        --background:url(./assets/bg-desktop-light.jpg) no-repeat;
+        
 
     }
 }
