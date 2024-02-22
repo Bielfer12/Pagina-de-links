@@ -23,7 +23,7 @@ body {
 /*adadada*/
 .light {
     --text-color:black; 
-    --background:url(./assets/bg-mobile-light.jpg) ;
+    /*--background:url(./assets/bg-mobile-light.jpg) ;*/
     --background-container: #d6cfd3;
     --surface-color: rgba(0, 0, 0, 0.05);
     --surface-color-hover: rgba(0, 0, 0, 0.2);
