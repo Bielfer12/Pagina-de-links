@@ -1,8 +1,7 @@
-<h1 align="center"> DevLinks </h1>
+<h1 align="center"> 🚀 Página de Links - Discover 🚀 </h1>
 
 <p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
+Olá, Tudo certo? Bom, este é um projeto desenvolvido junto a um curso de desenvolvimento Web e Git/GitHub,<br> aonde é proposto fazer uma ´página de links pessoal, para usar como metodo profissional tambem. <br/>
 </p>
 
 <p align="center">
@@ -22,15 +21,20 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
   <img alt="projeto DevLinks" src=".github/preview.jpg" width="100%">
 </p>
 
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML e CSS
-- JavaScript
-- Git e Github
-- Figma
-
+<h1> 📚 Linguagens Usadas </h1>
+<p>Como o intuito do curso era ser um aprendizado em desenvolvimento web as seguintes linguagens usadas são:</p>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+<ul>
+<h1>🔨 Ferramentas Usadas:</h1>  
+<ul>
+  <li>Visual Studo Code</li>
+  <li>Git</li>
+   <li>GitHub</li>
+</ul>
+  
 ## 💻 Projeto
 
 O DevLinks é um agregador de links para usar como cartão de visitas online.
